@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   num_array = []
-  name_hash.each do | key, num |
+  name_hash.collect { | key, num | num }
     num_array << num
   end
   min = num_array[0]
@@ -11,5 +11,6 @@ def key_for_min_value(name_hash)
   while i < num_array.length
     min = num_array[i] if min > num_array[i]
     i += 1
-  end    
+  end   
+  
 end
