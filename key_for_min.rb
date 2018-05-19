@@ -9,8 +9,7 @@ def key_for_min_value(name_hash)
     min = num_array[i] if min > num_array[i]
     i += 1
   end   
-  name_hash.each do | key, num |
-    return key if num == min
+  name_hash.each { | key, num | return key if num == min }
   end
   nil
 end
