@@ -10,6 +10,5 @@ def key_for_min_value(name_hash)
     i += 1
   end   
   name_hash.each { | key, num | return key if num == min }
-  end
   nil
 end
