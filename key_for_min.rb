@@ -9,5 +9,6 @@ def key_for_min_value(name_hash)
     min = num_array[i] if min > num_array[i]
     i += 1
   end   
-  
+  name_hash.each do | key, num |
+  end
 end
